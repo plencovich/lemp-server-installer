@@ -64,6 +64,29 @@ Más info de configuración [UFW](https://www.digitalocean.com/community/tutoria
 
 Una serie de scripts para la administración de dominios y servidor [Util Información](util/README.md)
 
+### Configuración SWAP
+
+Creación de archivo de intercambio de 1GB `fallocate -l 1G /swapfile`
+
+Cambiar los permisos correspondientes para root `chmod 600 /swapfile`
+
+Hacerlo archivo de intercambio `mkswap /swapfile`
+
+Permitir al sistema utilizarlo `swapon /swapfile`
+
+Comprobar que exista y este bien configurado `swapon --show`
+
+Backup de fstab para hacerlo permanente `cp /etc/fstab /etc/fstab.bak`
+
+Hacer permanente el archivo de intercambio `echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab`
+
+Editar el archivo `nano /etc/sysctl.conf` para hacer permanente la configuracion de *swappiness* agregando
+
+```
+vm.swappiness = 10
+vm.vfs_cache_pressure = 50
+```
+
 ### Información Adicional
 
 - Este repositorio es parte de un fork de [Serveradminsh Installers](https://github.com/serveradminsh/installers)
