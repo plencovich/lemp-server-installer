@@ -87,7 +87,7 @@ vm.swappiness = 10
 vm.vfs_cache_pressure = 50
 ```
 
-- Pasos extraidos de un tutorial bien explicado en [Digital Ocean - How To add swap space on Ubuntu 18.01](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04)
+- Pasos extraidos de un tutorial bien explicado en [Digital Ocean - How To add swap space on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04)
 
 
 ### Información Adicional
