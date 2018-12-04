@@ -92,6 +92,6 @@ Para listar todos los usuarios con el tamaño que ocupa cada carpeta, puede ejec
 
 Para conocer el estado del servidor: `./statusServer.sh`
 
-## Si encontró un problema o desea realizar una sugerencia
+### Si encontró un problema o desea realizar una sugerencia
 
 - LEMP Server Installer [Issues](https://github.com/plencovich/lemp-server-installer/issues)

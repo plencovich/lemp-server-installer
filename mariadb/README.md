@@ -52,7 +52,7 @@ Cambiar url default por una personalizada:
 
 `ln -s /usr/share/phpmyadmin /home/nginx/htdocs/public/{nombre_link}`
 
-#### Agregar seguridad al acceder via web:
+### Agregar seguridad al acceder via web:
 
 `phpenmod mcrypt`
 
@@ -75,6 +75,6 @@ location /{nombre_link} {
 }
 ```
 
-## Si encontró un problema o desea realizar una sugerencia
+### Si encontró un problema o desea realizar una sugerencia
 
 - LEMP Server Installer [Issues](https://github.com/plencovich/lemp-server-installer/issues)

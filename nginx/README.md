@@ -13,6 +13,6 @@ Se puede utilizar el siguiente script para compilar Nginx [installer.sh](install
 `chmod +x installer.sh && ./installer.sh`
 
 
-## Si encontró un problema o desea realizar una sugerencia
+### Si encontró un problema o desea realizar una sugerencia
 
 - LEMP Server Installer [Issues](https://github.com/plencovich/lemp-server-installer/issues)

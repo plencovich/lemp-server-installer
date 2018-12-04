@@ -64,7 +64,7 @@ Más info de configuración [UFW](https://www.digitalocean.com/community/tutoria
 
 Una serie de scripts para la administración de dominios y servidor [Util Información](util/README.md)
 
-## Información Adicional
+### Información Adicional
 
 - Este repositorio es parte de un fork de [Serveradminsh Installers](https://github.com/serveradminsh/installers)
 
@@ -80,6 +80,6 @@ Una serie de scripts para la administración de dominios y servidor [Util Inform
 
 - Guia de instalación LEMP en TecMint [LEMP Ubuntu 18.04](https://www.tecmint.com/install-nginx-mariadb-php-in-ubuntu-18-04/)
 
-## Si encontró un problema o desea realizar una sugerencia
+### Si encontró un problema o desea realizar una sugerencia
 
 - LEMP Server Installer [Issues](https://github.com/plencovich/lemp-server-installer/issues)
