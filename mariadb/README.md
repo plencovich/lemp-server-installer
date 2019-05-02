@@ -40,7 +40,7 @@ Luego compiar el archivo [my.cnf](config/my.cnf) a la carpeta `/etc/mysql/conf.d
 
 ### Instalación de phpMyAdmin - opcional
 
-`apt-get install phpmyadmin`
+`apt --no-install-recommends install phpmyadmin`
 
 >Web server to configure automatically: <-- Dejar en blanco
 
