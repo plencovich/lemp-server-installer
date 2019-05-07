@@ -30,9 +30,9 @@ cpuCount=$(nproc --all)
 currentPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dhparamBits="4096"
 nginxUser="nginx"
-openSslVers="1.0.2q"
+openSslVers="1.0.2r"
 pagespeedVers="1.13.35.2"
-pcreVers="8.42"
+pcreVers="8.43"
 zlibVers="1.2.11"
 
 #+----------------------------------------------------------------------------+

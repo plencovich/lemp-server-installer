@@ -19,6 +19,14 @@ GRANT ALL PRIVILEGES ON *.* TO 'user_new'@'localhost' WITH GRANT OPTION;
 quit
 ```
 
+### Borrar historial de MySQL Consola - opcional
+
+Ejecutar:
+- `rm $HOME/.mysql_history`
+- `ln -s /dev/null $HOME/.mysql_history`
+
+### MySQL Seguro
+
 `mysql_secure_installation`
 
 >Enter current password for root (enter for none): <-- presione enter
@@ -35,7 +43,7 @@ quit
 
 >Reload privilege tables now? [Y/n] <-- y
 
-Luego compiar el archivo [my.cnf](config/my.cnf) a la carpeta `/etc/mysql/conf.d/`
+Luego copiar el archivo [my.cnf](config/my.cnf) a la carpeta `/etc/mysql/conf.d/`
 
 
 ### Instalación de phpMyAdmin - opcional
