@@ -17,10 +17,10 @@ listen.group = nginx
 php_admin_value[disable_functions] = exec,passthru,shell_exec,system
 php_admin_flag[allow_url_fopen] = off
 pm = dynamic
-pm.max_children = 80
-pm.start_servers = 8
-pm.min_spare_servers = 4
-pm.max_spare_servers = 8
+pm.max_children = 40
+pm.start_servers = 15
+pm.min_spare_servers = 15
+pm.max_spare_servers = 25
 pm.process_idle_timeout = 10s
 chdir = /" >> $USER.conf
 
