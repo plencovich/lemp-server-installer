@@ -6,6 +6,14 @@
 
 Realizar los siguientes pasos:
 
+Actualizar lista de repositorio para versión 10.3.x
+
+1. `apt-get install software-properties-common`
+
+2. `apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8`
+
+3. `add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.ufscar.br/mariadb/repo/10.3/ubuntu bionic main'`
+
 `apt install mariadb-server`
 
 `mysql -u root`
@@ -82,6 +90,26 @@ location /{nombre_link} {
 	auth_basic_user_file /etc/nginx/pma_pass;
 }
 ```
+
+### Upgrade to MariaDB 10.3.x
+
+Backup de todas las bases de datos: `mysqldump -u {user} -p --all-databases > backup_database.sql`
+
+Parar el servicio: `systemctl stop mysql.service`
+
+Desinstalar la versión instalada: `apt remove mariadb-server`
+
+Actualizar lista de repositorio:
+
+1. `apt-get install software-properties-common`
+
+2. `apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8`
+
+3. `add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.ufscar.br/mariadb/repo/10.3/ubuntu bionic main'`
+
+Actualizar e instalar la nueva versión: `apt-get update && apt-get install mariadb-server`
+
+Upgrade de MySQL: `mysql_upgrade -u {user} -p`
 
 ### Si encontró un problema o desea realizar una sugerencia
 
