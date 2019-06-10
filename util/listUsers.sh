@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo du -shc --exclude={/home/ubuntu,/home/diegoplenco} /home/* > ~/listado-usuarios.txt
+sudo du -shc --exclude={/home/ubuntu,/home/nginx} /home/* > ~/listado-usuarios.txt
 perl -pi -e "s[/home/][-> ]g" ~/listado-usuarios.txt
 
 HOSTNAME=`hostname`
